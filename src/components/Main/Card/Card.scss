@@ -1,0 +1,50 @@
+ $redColor: #FD4E61;
+
+ .card {
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+       width: 230px;
+       height: 250px;
+       border-radius: 10px;
+       overflow: hidden;
+
+       & img {
+          width: 100%;
+          height: 100%;
+          transition: all .3s ease;
+       }
+
+       & img:hover {
+          scale: 1.02;
+       }
+    }
+
+    &__title {
+       font-weight: 600;
+       font-size: 18px;
+       margin-top: 20px;
+    }
+
+    &__price {
+       color: $redColor;
+       font-size: 19px;
+       margin: 8px 0 15px 0;
+    }
+
+    &__btn {
+       color: #11293B;
+       font-size: 20px;
+       width: 100%;
+       padding: 16px;
+       border-radius: 15px;
+       border: 0;
+       background-color: #E7E9EB;
+       transition: all .3s linear;
+
+       &:hover {
+          color: $redColor;
+       }
+    }
+ }
